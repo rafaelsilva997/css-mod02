@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando links</title>
+    <style>
+        /*
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseudo-element
+            >  = children/filho
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color:darkred
+        }
+
+        a:hover {
+            color:black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        .especial {
+            background-color: rgb(255, 140, 140);
+        }
+
+        .especial::before { /*before = antes*/
+            content: '⇒';
+        }
+
+        .especial::after { /*after = depois*/
+            content: '⇐';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://youtube.com" target="_blank">youtube</a></li>
+        <li><a href="https://facebook.com" target="_blank" class="especial">facebook</a></li>
+        <li><a href="https://whatsapp.com" target="_blank">whatsapp</a></li>
+        </li>
+    </ul>
+</body>
+</html>
