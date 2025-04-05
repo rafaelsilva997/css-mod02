@@ -12,10 +12,18 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th{
             border: 1px solid black;
             padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
 
         thead, tfoot {
@@ -23,7 +31,21 @@
             color: white
             ;
         }
+
+        thead > tr > th{
+            position:sticky;
+            top: 0;
+            background-color: gray;
+        }
         
+        tbody > tr:nth-child(even) {
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(odd) { /*2n*/
+            background-color: lightgray;
+        }
+
         td.num {
             text-align: right;
         }
@@ -33,9 +55,10 @@
     <h1>Uso de Tabelas</h1>
     <p>Anatomias para tabelas grandes</p>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 100px;">População</th>
         </thead>
         <tbody>
             <tr>
@@ -149,9 +172,16 @@
             </tr>
         </tbody>
         <tfoot>
-            <th>Total</th>
+            <th scope="row">Total de Habitantes</th>
             <td class="num">212 583 750</td>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste suscipit corrupti aliquid, cum illo expedita officia natus ullam pariatur dolores placeat sint facilis esse aut a, ipsa, nihil tempora dolorem?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, sint debitis. Laudantium magnam ratione assumenda quos? Eveniet, corporis, illo tempora fugit totam vero doloremque repellat ad cumque necessitatibus error Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut id magnam expedita ipsa facilis quo delectus cum cupiditate enim, possimus, velit quis ullam neque qui nam, excepturi fuga consectetur. Distinctio!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste suscipit corrupti aliquid, cum illo expedita officia natus ullam pariatur dolores placeat sint facilis esse aut a, ipsa, nihil tempora dolorem?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, sint debitis. Laudantium magnam ratione assumenda quos? Eveniet, corporis, illo tempora fugit totam vero doloremque repellat ad cumque necessitatibus error Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut id magnam expedita ipsa facilis quo delectus cum cupiditate enim, possimus, velit quis ullam neque qui nam, excepturi fuga consectetur. Distinctio!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste suscipit corrupti aliquid, cum illo expedita officia natus ullam pariatur dolores placeat sint facilis esse aut a, ipsa, nihil tempora dolorem?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, sint debitis. Laudantium magnam ratione assumenda quos? Eveniet, corporis, illo tempora fugit totam vero doloremque repellat ad cumque necessitatibus error Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut id magnam expedita ipsa facilis quo delectus cum cupiditate enim, possimus, velit quis ullam neque qui nam, excepturi fuga consectetur. Distinctio!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste suscipit corrupti aliquid, cum illo expedita officia natus ullam pariatur dolores placeat sint facilis esse aut a, ipsa, nihil tempora dolorem?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, sint debitis. Laudantium magnam ratione assumenda quos? Eveniet, corporis, illo tempora fugit totam vero doloremque repellat ad cumque necessitatibus error Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut id magnam expedita ipsa facilis quo delectus cum cupiditate enim, possimus, velit quis ullam neque qui nam, excepturi fuga consectetur. Distinctio!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste suscipit corrupti aliquid, cum illo expedita officia natus ullam pariatur dolores placeat sint facilis esse aut a, ipsa, nihil tempora dolorem?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, sint debitis. Laudantium magnam ratione assumenda quos? Eveniet, corporis, illo tempora fugit totam vero doloremque repellat ad cumque necessitatibus error Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut id magnam expedita ipsa facilis quo delectus cum cupiditate enim, possimus, velit quis ullam neque qui nam, excepturi fuga consectetur. Distinctio!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste suscipit corrupti aliquid, cum illo expedita officia natus ullam pariatur dolores placeat sint facilis esse aut a, ipsa, nihil tempora dolorem?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, sint debitis. Laudantium magnam ratione assumenda quos? Eveniet, corporis, illo tempora fugit totam vero doloremque repellat ad cumque necessitatibus error Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut id magnam expedita ipsa facilis quo delectus cum cupiditate enim, possimus, velit quis ullam neque qui nam, excepturi fuga consectetur. Distinctio!</p>
+    
 </body>
 </html>
